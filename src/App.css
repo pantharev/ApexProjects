@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.expanding-container {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.expanding-content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.collapsed-content {
+  opacity: 0;
+  height: 0;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
