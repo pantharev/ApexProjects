@@ -7,4 +7,5 @@
     [x] - animation rotates and changes colors. make smaller every time.
     [] - fix api, data warehouse, reports positions.
     [] - find images or icons for api, warehouse, reports.
-    [] - 
+    [w] - try to center the blocks better
+    
