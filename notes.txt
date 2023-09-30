@@ -1,0 +1,10 @@
+[] - add private projects (BTH parking system)
+[] - desktop projects (sorting)
+[] - misc projects....
+
+[] - learn react-spring library.
+[] - create animation for API -> ETL -> database -> reports.
+    [x] - animation rotates and changes colors. make smaller every time.
+    [] - fix api, data warehouse, reports positions.
+    [] - find images or icons for api, warehouse, reports.
+    [] - 
