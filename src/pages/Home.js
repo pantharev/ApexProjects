@@ -14,7 +14,10 @@ export default function Home() {
                     </p>
                     <p className="mt-5">
                     I am currently working on a project to create a website for a local business. 
+                    <br></br>
                     I am also working on a personal project to create a website (this one!) to showcase my work.
+                    <br></br>
+                    Additionally I am working on more side projects to extend my knowledge in React, NextJs, and TailwindCSS. More to come soon!
                     </p>
                 </div>
             </div>

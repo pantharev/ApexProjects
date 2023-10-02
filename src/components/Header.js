@@ -14,6 +14,7 @@ export default function Header({ theme, toggleTheme }) {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="/blogs">Blogs</Link></li>
                     </ul>
                     <div className="mt-3 flex justify-center">
                             <FiSun className="mr-2" />

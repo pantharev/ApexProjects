@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import CubeAnimation from './components/CubeAnimation';
+import Blog from './pages/Blog';
 
 
 const lightTheme = {
@@ -48,6 +49,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/blogs" element={<Blog />} />
           </Routes>
       </Layout>
       </AppWrapper>
