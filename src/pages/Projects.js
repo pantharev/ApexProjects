@@ -9,19 +9,40 @@ export default function Projects() {
 
     const [expanded, setExpanded] = useState(false);
     const [privateExpanded, setPrivateExpanded] = useState(false);
+    const [expandedText, setExpandedText] = useState("Expand All");
+    const [privateExpandedText, setPrivateExpandedText] = useState("Expand All");
 
     useEffect(() => {
         console.log("useEffect called");
     }, [expanded])
-    console.log(expanded);
+    
+    const handleExpandToggle = () => {
+        // based on toggle, change between 'Expand All' and 'Collapse All'
+        setExpanded((prev) => !prev);
+        if (expandedText === "Expand All") {
+            setExpandedText("Collapse All");
+        } else {
+            setExpandedText("Expand All");
+        }
+    }
+
+    const handlePrivateExpandToggle = () => {
+        setPrivateExpanded((prev) => !prev);
+
+        if (privateExpandedText === "Expand All") {
+            setPrivateExpandedText("Collapse All");
+        } else {
+            setPrivateExpandedText("Expand All");
+        }
+    }
 
     return (
         <>
             <h1 className="mb-5">Web projects</h1>
             <h2>Public live Projects</h2>
             <div className="flex gap-x-2">
-                <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(true)}>Expand</button>
-                <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(false)}>Collapse</button>
+                <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={handleExpandToggle}>{expandedText}</button>
+                {/* <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(false)}>Collapse All</button> */}
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
@@ -74,22 +95,21 @@ export default function Projects() {
                         <a href="https://github.com/pantharev/ReactiveHandlebars">Reactive Handlebars github repository</a>
                     </div>
                     <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
-                        This was made with Handlebars and RXJS, to create reactive handlebars components that refresh when the data changes.
+                        This was made with Handlebars and RXJS, to create reactive Handlebars components that refresh when the data changes.
                         Influenced by frameworks such as Angular, React, and Vuejs.
                     </div>
                 </li>
             </ul>
             <h2>Private projects</h2>
             <div className="flex gap-x-2">
-                <button className="bg-indigo-600 rounded-lg p-2 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={() => setPrivateExpanded(true)}>Expand</button>
-                <button className="bg-indigo-600 rounded-lg p-2 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={() => setPrivateExpanded(false)}>Collapse</button>
+                <button className="bg-indigo-600 rounded-lg p-2 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
                     Parking System
                     <div className={`expanding-container ${privateExpanded ? 'expanding-content' : 'collapsed-content'}`}>
                         <div>
-                            Made with React, nodeJs, and Sql Server CTEs and Stored Procedures. Under development as of 9/27/2023.
+                            Made with React, NodeJs, and Sql Server CTEs and Stored Procedures. Under development as of 9/27/2023.
                             <br></br>
                             A parking system that allows admins to manage parking lots for the residents/renters and sends notifications if the monthly payment is late/expired/expiring soon.
                         </div>
