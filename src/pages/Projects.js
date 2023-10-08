@@ -68,15 +68,6 @@ export default function Projects() {
                     {/* TODO: Carousel of images */}
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
-                    Apex Radio. 
-                    <div className="flex flex-col gap-y-3">
-                        <a href="https://apex-radio.vercel.app/">https://apex-radio.vercel.app/</a>
-                    </div>
-                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
-                        Made with React. Fun wip side project, where albums can be made and songs are liked/disliked.
-                    </div>
-                </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
                     LMS FIU.
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/lms-fiu-fb-client">https://github.com/pantharev/lms-fiu-fb-client</a>
@@ -111,7 +102,7 @@ export default function Projects() {
                         <div>
                             Made with React, NodeJs, and Sql Server CTEs and Stored Procedures. Under development as of 9/27/2023.
                             <br></br>
-                            A parking system that allows admins to manage parking lots for the residents/renters and sends notifications if the monthly payment is late/expired/expiring soon.
+                            A parking system that allows admins to manage parking lots for the residents/renters, that are part of multi family condo buildings, and sends notifications if the monthly payment is late/expired/expiring soon.
                         </div>
                         <Carousel showArrows={true} className="w-full">
                             <div>
@@ -136,7 +127,13 @@ export default function Projects() {
             </ul>
 
             <section>
-                <h2>ETL/BI process</h2>
+                <h2>ETL/ELT/BI process</h2>
+                <p>
+                    The ETL/ELT process involves <strong>extracting</strong> data from diverse sources such as APIs, databases, or files (CSV, XLSX, XML, JSON). 
+                    This data is then <strong>transformed</strong> through processes like data cleansing, aggregation, normalization, and enrichment, to prepare it for analysis and reporting. 
+                    Finally, the transformed data is <strong>loaded</strong> into a source destination, such as a database or a data warehouse. 
+                    This resulting data model is then utilized to generate insightful reports for business intelligence purposes.
+                </p>
                 <div>
                     {/* <CubeAnimation /> */}
                     <ETLAnimation />
@@ -152,7 +149,18 @@ export default function Projects() {
 
             <section>
                 <h2>Misc projects</h2>
-                <p>-</p>
+
+                <ul className="mt-3 flex flex-col gap-y-3 list-disc">
+                    <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                        Apex Radio. 
+                        <div className="flex flex-col gap-y-3">
+                            <a href="https://apex-radio.vercel.app/">https://apex-radio.vercel.app/</a>
+                        </div>
+                        <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                            Made with React. Fun wip side project, where albums can be made and songs are liked/disliked.
+                        </div>
+                    </li>
+                </ul>
             </section>
         </>
     );

@@ -10,7 +10,7 @@ export default function Header({ theme, toggleTheme }) {
             <div className="flex justify-center">
                 <header className="flex flex-col justify-center">
                     <p className="text-lg text-center">Nicolas Arevalo - Programmer/Software Developer</p>
-                    <ul className="flex gap-x-2">
+                    <ul className="flex gap-x-2 justify-center">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/projects">Projects</Link></li>

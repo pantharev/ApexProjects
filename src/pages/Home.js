@@ -18,9 +18,8 @@ export default function Home() {
                     And experience with ETL SSIS (python/C# apis) data warehousing tasks.
                     </p>
                     <p>
-                    I'm currently working on personal project to create a website (this one!) to showcase my work.
                     <br></br>
-                    Additionally I am working on more side projects to extend my knowledge in React, NextJs, TailwindCSS, among other technologies such as OpenAI library, Prisma, Stripe, etc. More to come soon!
+                    I am currently working on more side projects to extend my knowledge in React, NextJs, TailwindCSS, among other technologies such as OpenAI library, Prisma, Stripe, etc. More to come soon!
                     </p>
                 </div>
             </div>
