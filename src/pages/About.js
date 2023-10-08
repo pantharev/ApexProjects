@@ -9,7 +9,7 @@ export default function About() {
                 <br></br>
                 Have experience with web development technologies such as Angular/React/Javascript/Jquery/HTML/CSS.
                 <br></br>
-                Have experience with back-end development and SQL (server) databases.
+                Have experience with back-end development technologies such as NodeJS/express and SQL (server) databases.
             </p>
         </header>
         </div>
