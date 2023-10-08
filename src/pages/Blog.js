@@ -20,11 +20,24 @@ export default function Blog() {
                 </p>
                 `
         },
-        // {
-        //     id: 2,
-        //     title: "Blog 2",
-        //     body: "This is the second blog"
-        // },
+        {
+            id: 2,
+            title: "Learnings of my projects and flow - 10/8/2023",
+            body: `
+            <p>I've noticed that I take an interest in creating new things and showcasing them. 
+                Whether it be to my family or friends, clients, or just for myself. 
+                <br>
+                I enjoy creating new things and learning new things.
+                This may be due to my curiosity and desire to learn new things, or it may be due to my desire to create something that I can be proud of.
+                <br>
+                <br>
+                I can dig deep into the design aspect and the code, get into the flow of creating the application, whether it be a simple CRUD app such as an admin dashboard, or a complex app with
+                logic in the SQL back-end. I take pride in creating and applying all the knowledge I've obtained when learning and developing new projects. 
+                It lets me know of how far I've come and how much further I can go.
+                By having this constant drive of learning and doing, I really think the possibilities of being able to create well developed and interesting applications for me are endless.
+            </p>
+            `
+        },
         // {
         //     id: 3,
         //     title: "Blog 3",
@@ -80,16 +93,16 @@ export default function Blog() {
     return(
         <>
             <h1 className="mb-5">Blog</h1>
-            {blogs.map((b) => {
-                return (
-                    <div className="flex flex-col gap-y-3">
-                        <div className="flex flex-col gap-y-3 ml-3 border border-indigo-500 rounded-lg shadow-lg">
+            <div className="flex flex-col gap-y-5">
+                {blogs.map((b) => {
+                    return (
+                        <div className="flex flex-col gap-y-3 ml-3 p-3 border border-indigo-500 rounded-lg shadow-lg">
                             <h2>{b.title}</h2>
                             <div dangerouslySetInnerHTML={{ __html: b.body}}></div>
                         </div>
-                    </div>
-                )
-            })}
+                    )
+                })}
+            </div>
         </>
     )
 

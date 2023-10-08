@@ -37,4 +37,6 @@
 [] - blogs, with timestamps, could be about things I learn, certificates on linkedinlearning. e.g. Nextjs, react, tailwindcss. 
 
 [] - 
+
+[w] - fix background to be 100% full height for every page. home, about, projects, blogs
     
