@@ -68,6 +68,16 @@ export default function Projects() {
                         Used the MEAN full-stack (MySql, Express, Anuglar, NodeJS).
                     </div>
                 </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                    Reactive Handlebars
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://github.com/pantharev/ReactiveHandlebars">Reactive Handlebars github repository</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        This was made with Handlebars and RXJS, to create reactive handlebars components that refresh when the data changes.
+                        Influenced by frameworks such as Angular, React, and Vuejs.
+                    </div>
+                </li>
             </ul>
             <h2>Private projects</h2>
             <div className="flex gap-x-2">
@@ -105,17 +115,25 @@ export default function Projects() {
                 </li>
             </ul>
 
-            <h2>ETL/BI process</h2>
-            <div>
-                {/* <CubeAnimation /> */}
-                <ETLAnimation />
-                {/* <Animation2 /> */}
-            </div>
+            <section>
+                <h2>ETL/BI process</h2>
+                <div>
+                    {/* <CubeAnimation /> */}
+                    <ETLAnimation />
+                    {/* <Animation2 /> */}
+                </div>
+            </section>
 
-            <h2>Desktop projects</h2>
+            <section>
+                <h2>Desktop projects</h2>
+                <p>-</p>
+            </section>
 
 
-            <h2>Misc projects</h2>
+            <section>
+                <h2>Misc projects</h2>
+                <p>-</p>
+            </section>
         </>
     );
 }

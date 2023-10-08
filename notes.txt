@@ -6,6 +6,35 @@
 [] - create animation for API -> ETL -> database -> reports.
     [x] - animation rotates and changes colors. make smaller every time.
     [] - fix api, data warehouse, reports positions.
-    [] - find images or icons for api, warehouse, reports.
+    [x] - find images or icons for api, warehouse, reports.
     [w] - try to center the blocks better
+
+
+[] - definition of done?
+
+[x] - has main side projects. 
+[] - has NEW side projects.
+
+
+[w] - react nextjs tailwindcss ai with stripe. https://www.youtube.com/watch?v=ffJ38dBzrlY&t=4078s
+[] - react ecommerce
+
+[] - hard skill certificates - linkedin.
+
+[] - nextjs
+[] - tailwindcss
+[] - sql server
+
+[] - soft skill certificates
+[x] - trust
+[] - teamwork.
+
+
+[x] - BTH parking system.
+[x] - react ecommerce
+
+
+[] - blogs, with timestamps, could be about things I learn, certificates on linkedinlearning. e.g. Nextjs, react, tailwindcss. 
+
+[] - 
     
