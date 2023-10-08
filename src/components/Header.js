@@ -9,7 +9,7 @@ export default function Header({ theme, toggleTheme }) {
         <div className={`flex justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
             <div className="flex justify-center">
                 <header className="flex flex-col justify-center">
-                    <p className="text-lg text-center">Nicolas Arevalo</p>
+                    <p className="text-lg text-center">Nicolas Arevalo - Programmer/Software Developer</p>
                     <ul className="flex gap-x-2">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
