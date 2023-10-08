@@ -11,7 +11,7 @@ export default function Home() {
                     <div className="flex justify-center my-5">
                         <img className="h-64 w-64 rounded-full" src="./img/Nicolas_Headshot.png" alt="Profile" />
                     </div>
-                    <p>My name is Nicolas Arevalo, nice to meet you!</p>
+                    <p>Hello, my name is Nicolas Arevalo, nice to meet you!</p>
                     <p>
                     I am a full stack developer with experience in Javascript/Html/Css, Jquery, Handlebars, RXJS, and some Angular/React. 
                     I also have experience with back-end development and SQL (server) databases. 
