@@ -54,7 +54,7 @@ export default function ETLAnimation() {
 
     return (
         <>
-            <button className="rounded-lg bg-indigo-400 hover:bg-indigo-200 p-3" onClick={handleClick}>
+            <button className="rounded-lg bg-indigo-400 hover:bg-indigo-200 p-1" onClick={handleClick}>
                 ETL loop
             </button>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>

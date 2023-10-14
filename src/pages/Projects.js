@@ -39,9 +39,9 @@ export default function Projects() {
     return (
         <>
             <h1 className="mb-5">Web projects</h1>
-            <h2>Public live Projects</h2>
             <div className="flex gap-x-2">
-                <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={handleExpandToggle}>{expandedText}</button>
+                <h2>Public live Projects</h2>
+                <button className="bg-indigo-500 rounded-lg p-1 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={handleExpandToggle}>{expandedText}</button>
                 {/* <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(false)}>Collapse All</button> */}
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
@@ -91,9 +91,9 @@ export default function Projects() {
                     </div>
                 </li>
             </ul>
-            <h2>Private projects</h2>
-            <div className="flex gap-x-2">
-                <button className="bg-indigo-600 rounded-lg p-2 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
+            <div className="flex gap-x-2 mt-5 mb-2">
+                <h2>Private projects</h2>
+                <button className="bg-indigo-600 rounded-lg p-1 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
@@ -126,15 +126,15 @@ export default function Projects() {
                 </li>
             </ul>
 
-            <section>
-                <h2>ETL/ELT/BI process</h2>
+            <section className="mt-5 mb-2">
+                <h2 className="mb-2">ETL/ELT/BI process</h2>
                 <p>
                     The ETL/ELT process involves <strong>extracting</strong> data from diverse sources such as APIs, databases, or files (CSV, XLSX, XML, JSON). 
                     This data is then <strong>transformed</strong> through processes like data cleansing, aggregation, normalization, and enrichment, to prepare it for analysis and reporting. 
                     Finally, the transformed data is <strong>loaded</strong> into a source destination, such as a database or a data warehouse. 
                     This resulting data model is then utilized to generate insightful reports for business intelligence purposes.
                 </p>
-                <div>
+                <div className="mt-5">
                     {/* <CubeAnimation /> */}
                     <ETLAnimation />
                     {/* <Animation2 /> */}
