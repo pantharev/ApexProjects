@@ -50,3 +50,54 @@ code {
 .button-transition {
   transition-duration: 300ms;
 }
+
+.sun {
+  height: 600px;
+  width:600px;
+  background: rgb(246,232,13);
+  background: radial-gradient(circle, rgba(246,232,13,1) 0%,  rgba(255,255,255,0) 70%);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-animation: Gradient 6s ease-in-out infinite;
+  -moz-animation: Gradient 6s ease-in-out infinite;
+	animation: Gradient 6s ease-in-out infinite; 
+  position: absolute;
+  
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-size: 50%;
+	}
+	50% {
+		background-size: 100%;
+	}
+	100% {
+		background-size: 50%;
+	}
+}
+
+@-moz-keyframes Gradient {
+		0% {
+		background-size: 50%;
+	}
+	50% {
+		background-size: 100%;
+	}
+	100% {
+		background-size: 50%;
+	}
+}
+
+@keyframes Gradient {
+		0% {
+		background-size: 50%;
+	}
+	50% {
+		background-size: 100%;
+	}
+	100% {
+		background-size: 50%;
+	}
+}

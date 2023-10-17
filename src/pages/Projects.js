@@ -40,34 +40,35 @@ export default function Projects() {
         <>
             <h1 className="mb-5">Web projects</h1>
             <div className="flex gap-x-2">
-                <h2>Public live Projects</h2>
+                <h2>Public projects</h2>
                 <button className="bg-indigo-500 rounded-lg p-1 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={handleExpandToggle}>{expandedText}</button>
                 {/* <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(false)}>Collapse All</button> */}
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     Apex Commerce
                     <div className="flex flex-col gap-y-3">
                         <a href="https://apex-commerce.vercel.app/">https://apex-commerce.vercel.app/</a>
                     </div>
                     <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
-                        E Commerce application with shopping cart functionality made with React
+                        E-Commerce application with shopping cart functionality made with React
                     </div>
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     SurveySpeak (& design). 
                     <div className="flex flex-col gap-y-3">
                         <a href="https://brainspeak.onrender.com/">https://brainspeak.onrender.com/</a>
                         <a href="https://surveyspeak.vercel.app/">https://surveyspeak.vercel.app/</a>
                     </div>
                     <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
-                        Web app prototype that would allow people to take surveys that 'speak' to the user with their own ai personalities. 
+                        Web application prototype that would allow people to take surveys that 'speak' to the user with their own ai personalities. 
                         Has a personal assistaint robot made with OpenAI api that can be interacted with. General wrapper around the OpenAI api that tracks chat history and can be used as a chatbot.
-                        Project is on hold as of 9/24/2023.
+                        <br></br>
+                        This project was made alongside a designer and is on hold as of 9/24/2023.
                     </div>
                     {/* TODO: Carousel of images */}
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     LMS FIU.
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/lms-fiu-fb-client">https://github.com/pantharev/lms-fiu-fb-client</a>
@@ -80,7 +81,7 @@ export default function Projects() {
                         Used the MEAN full-stack (MySql, Express, Anuglar, NodeJS).
                     </div>
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     Reactive Handlebars
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/ReactiveHandlebars">Reactive Handlebars github repository</a>
@@ -96,7 +97,7 @@ export default function Projects() {
                 <button className="bg-indigo-600 rounded-lg p-1 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     Parking System
                     <div className={`expanding-container ${privateExpanded ? 'expanding-content' : 'collapsed-content'}`}>
                         <div>
@@ -128,6 +129,8 @@ export default function Projects() {
 
             <section className="mt-5 mb-2">
                 <h2 className="mb-2">ETL/ELT/BI process</h2>
+                <p>Experience building SSIS/ETL data pipelines (using C#/python/SQL server) to extract information from a source vendor API, and load it into a data warehouse for business reporting purposes. Ultimately, the reports and data is used to enhance decision making for the company.</p>
+                <br></br>
                 <p>
                     The ETL/ELT process involves <strong>extracting</strong> data from diverse sources such as APIs, databases, or files (CSV, XLSX, XML, JSON). 
                     This data is then <strong>transformed</strong> through processes like data cleansing, aggregation, normalization, and enrichment, to prepare it for analysis and reporting. 
@@ -151,7 +154,7 @@ export default function Projects() {
                 <h2>Misc projects</h2>
 
                 <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                    <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg">
+                    <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                         Apex Radio. 
                         <div className="flex flex-col gap-y-3">
                             <a href="https://apex-radio.vercel.app/">https://apex-radio.vercel.app/</a>
