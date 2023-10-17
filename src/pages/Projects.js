@@ -78,7 +78,7 @@ export default function Projects() {
                         <br></br>
                         Some core functionality includes allowing professors/admins to create courses and course content (pdfs/links/qualtrics quizzes), and students to enroll in courses and view course content.
                         <br></br>
-                        Used the MEAN full-stack (MySql, Express, Anuglar, NodeJS).
+                        Used the MEAN full-stack (MySql, Express, Angular, NodeJS).
                     </div>
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">

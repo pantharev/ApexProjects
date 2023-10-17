@@ -28,7 +28,6 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <!-- <div class="sun"></div> -->
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -41,12 +40,4 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script>
-    $(document).mousemove(function(e){
-        $(".sun").css({
-          left:e.pageX - 300, 
-          top:e.pageY - 300
-        });
-      });
-  </script>
 </html>

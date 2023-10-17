@@ -11,6 +11,7 @@ import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import CubeAnimation from './components/CubeAnimation';
 import Blog from './pages/Blog';
+import Sun from './components/Sun';
 
 
 const lightTheme = {
@@ -43,6 +44,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <AppWrapper>
+        <Sun />
       <Header toggleTheme={toggleTheme} theme={theme} />
       <Layout className={`flex justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
           <Routes>
