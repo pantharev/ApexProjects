@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 export default function Home() {
     return (
         <>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-[50px]">
                 <div>
                     <h1 className="mt-2 text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 text-center text-gradient font-extrabold">
                     Welcome to my portfolio.

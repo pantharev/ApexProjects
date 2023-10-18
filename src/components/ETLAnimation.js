@@ -96,12 +96,12 @@ export default function ETLAnimation() {
                         }}
                         />
                     </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '150px' }}>
+                <div className="flex items-center gap-[150px]">
                     <div className="h-[80px] w-[100px] bg-blue-400 text-center z-0">
                         <img src="./img/Api.png" alt="Api" />
                         API
                     </div>
-                    <div className="h-[80px] w-[100px] bg-blue-400 text-center z-0">
+                    <div className="h-[80px] w-[100px] bg-blue-400 text-center z-0 mb-5">
                         <img src="./img/database.jpg" alt="Database" />
                         Data Warehouse
                     </div>

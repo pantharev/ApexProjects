@@ -17,6 +17,10 @@
  }
 }
 
+.list-hover:hover {
+  @apply hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%
+}
+
 html,
 body {
   height: 100%;

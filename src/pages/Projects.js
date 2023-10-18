@@ -38,14 +38,16 @@ export default function Projects() {
 
     return (
         <>
+        <div className="w-full mt-[75px]">
             <h1 className="mb-5">Web projects</h1>
+            
             <div className="flex gap-x-2">
                 <h2>Public projects</h2>
                 <button className="bg-indigo-500 rounded-lg p-1 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={handleExpandToggle}>{expandedText}</button>
                 {/* <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(false)}>Collapse All</button> */}
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent to-purple-300">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                     Apex Commerce
                     <div className="flex flex-col gap-y-3">
                         <a href="https://apex-commerce.vercel.app/">https://apex-commerce.vercel.app/</a>
@@ -54,7 +56,7 @@ export default function Projects() {
                         E-Commerce application with shopping cart functionality made with React
                     </div>
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent to-purple-300">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                     SurveySpeak (& design). 
                     <div className="flex flex-col gap-y-3">
                         <a href="https://brainspeak.onrender.com/">https://brainspeak.onrender.com/</a>
@@ -68,7 +70,7 @@ export default function Projects() {
                     </div>
                     {/* TODO: Carousel of images */}
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent to-purple-300">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                     LMS FIU.
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/lms-fiu-fb-client">https://github.com/pantharev/lms-fiu-fb-client</a>
@@ -81,7 +83,7 @@ export default function Projects() {
                         Used the MEAN full-stack (MySql, Express, Angular, NodeJS).
                     </div>
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent to-purple-300">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                     Reactive Handlebars
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/ReactiveHandlebars">Reactive Handlebars github repository</a>
@@ -92,12 +94,15 @@ export default function Projects() {
                     </div>
                 </li>
             </ul>
+
+            {/* <hr className="border border-b-purple-300 my-5"></hr> */}
+
             <div className="flex gap-x-2 mt-5 mb-2">
                 <h2>Private projects</h2>
                 <button className="bg-indigo-600 rounded-lg p-1 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent to-purple-300">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                     Parking System
                     <div className={`expanding-container ${privateExpanded ? 'expanding-content' : 'collapsed-content'}`}>
                         <div>
@@ -127,6 +132,8 @@ export default function Projects() {
                 </li>
             </ul>
 
+            {/* <hr className="border border-b-purple-300 my-5"></hr> */}
+
             <section className="mt-5 mb-2">
                 <h2 className="mb-2">ETL/ELT/BI process</h2>
                 <p>Experience building SSIS/ETL data pipelines (using C#/python/SQL server) to extract information from a source vendor API, and load it into a data warehouse for business reporting purposes. Ultimately, the reports and data is used to enhance decision making for the company.</p>
@@ -137,24 +144,27 @@ export default function Projects() {
                     Finally, the transformed data is <strong>loaded</strong> into a source destination, such as a database or a data warehouse. 
                     This resulting data model is then utilized to generate insightful reports for business intelligence purposes.
                 </p>
-                <div className="mt-5">
+                <div className="mt-5 mb-5">
                     {/* <CubeAnimation /> */}
                     <ETLAnimation />
                     {/* <Animation2 /> */}
                 </div>
             </section>
 
+            {/* <hr className="border border-b-purple-300 my-5"></hr> */}
+
             <section>
                 <h2>Desktop projects</h2>
                 <p>-</p>
             </section>
 
+            {/* <hr className="border border-b-purple-300 my-5"></hr> */}
 
             <section>
                 <h2>Misc projects</h2>
 
                 <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                    <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent to-purple-300">
+                    <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                         Apex Radio. 
                         <div className="flex flex-col gap-y-3">
                             <a href="https://apex-radio.vercel.app/">https://apex-radio.vercel.app/</a>
@@ -165,6 +175,7 @@ export default function Projects() {
                     </li>
                 </ul>
             </section>
+        </div>
         </>
     );
 }

@@ -6,7 +6,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function Header({ theme, toggleTheme }) {
     return (
-        <div className={`flex justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
+        <div className={`flex justify-center fixed w-full bg-transparent ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
             <div className="flex justify-center">
                 <header className="flex flex-col justify-center">
                     <p className="text-lg text-center">Nicolas Arevalo - Programmer/Software Developer</p>

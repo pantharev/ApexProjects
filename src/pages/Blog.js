@@ -92,6 +92,7 @@ export default function Blog() {
 
     return(
         <>
+        <div className="w-full mt-[75px]">
             <h1 className="mb-5">Blog</h1>
             <div className="flex flex-col gap-y-5">
                 {blogs.map((b) => {
@@ -103,6 +104,7 @@ export default function Blog() {
                     )
                 })}
             </div>
+        </div>
         </>
     )
 
