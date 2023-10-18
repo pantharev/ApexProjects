@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div>
         <header>
-            <p className="shadow-lg border border-indigo-400">
+            <p className="shadow-lg border border-indigo-400 p-2">
                 About Page
                 <br></br>
                 Graduated from FIU with a Bachelors in Computer Science.
