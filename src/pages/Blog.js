@@ -38,6 +38,22 @@ export default function Blog() {
             </p>
             `
         },
+        {
+            id: 3,
+            title: "Artificial intellgence and large language models - 10/27/2023",
+            body: `
+            <p>I'm starting to gain an interest in AI and its use cases more and more each day as I learn more about it.
+                <br>
+                I've been learning about LLMs and it's use cases and how I can apply it to my projects.
+                <br>
+                One of the goals I have is to create agents that can help me or others with task automation. 
+                For example, having agents that can automate the process of creating a website, or creating analytic dashboards from data.
+                <br>
+                If this can be done, then it could bring value not just to me but to others as well.
+                <br>
+            </p>
+            `
+        }
         // {
         //     id: 3,
         //     title: "Blog 3",
