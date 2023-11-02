@@ -34,10 +34,13 @@ function App() {
 
   useEffect(() => {
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    console.log("prefersDarkMode", prefersDarkMode);
+    document.getElementById("root").style.backgroundColor = prefersDarkMode ? "rgb(17, 17, 17)" : "rgb(245, 245, 245)";
     setTheme(prefersDarkMode ? "dark" : "light");
   }, []);
 
   const toggleTheme = () => {
+    document.getElementById("root").style.backgroundColor = theme == "light" ? "rgb(17, 17, 17)" : "rgb(245, 245, 245)";
     setTheme(theme === "light" ? "dark" : "light");
   };
 

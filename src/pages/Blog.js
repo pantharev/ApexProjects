@@ -54,11 +54,6 @@ export default function Blog() {
             </p>
             `
         }
-        // {
-        //     id: 3,
-        //     title: "Blog 3",
-        //     body: "This is the third blog"
-        // }
     ]);
 
   
@@ -107,7 +102,6 @@ export default function Blog() {
     // $("#blogs").html(ret);
 
     return(
-        <>
         <div className="w-full mt-[75px]">
             <h1 className="mb-5">Blog</h1>
             <div className="flex flex-col gap-y-5">
@@ -121,7 +115,6 @@ export default function Blog() {
                 })}
             </div>
         </div>
-        </>
     )
 
 }

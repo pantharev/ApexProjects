@@ -37,8 +37,7 @@ export default function Projects() {
     }
 
     return (
-        <>
-        <div className="w-full mt-[75px]">
+        <div className="w-full mt-[75px] h-full">
             <h1 className="mb-5">Web projects</h1>
             
             <div className="flex gap-x-2">
@@ -176,6 +175,5 @@ export default function Projects() {
                 </ul>
             </section>
         </div>
-        </>
     );
 }
