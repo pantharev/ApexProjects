@@ -1,115 +1,56 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Blogs from "../components/Blogs";
 
 export default function Blog() {
 
-    const [blogs, setBlogs] = useState([
-        {
-            id: 1,
-            title: "Learnings from my first job - 10/1/2023",
-            body: 
+    const URL = 'https://api-us-east-1-shared-usea1-02.hygraph.com/v2/cln7uwkh5fb4301t797ym0ysd/master'
+
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        fetch(URL, {
+            method: "POST",
+            headers: {
+                contentType: "application/json",
+                accept: "application/json",
+            },
+            body: JSON.stringify({
+                query: `
+                    query Blogs {
+                        blogs {
+                            id
+                            slugId
+                            title
+                            image {
+                                id
+                                url
+                            }
+                            content
+                        }
+                    }
                 `
-                <p>
-                    Learned to use SQL Server, NodeJs, Javascript, html, css, jquery in a professional setting. To create widgets, checkin forms, a calendar, student to faculty mentor assignment crud operations, and assist with reports for student grades and faculty. 
-                    <br>
-                    This was done with very minimal frameworks and libraries to prevent updates from breaking the website.
-                    <br>
-                    Additionally, I used a new framework I created while on the job, this uses Handlebars.js and rxjs to create a dynamic re-rendering of the page without having to refresh the page.
-                    A link to the framework can be found here: <a href="https://github.com/pantharev/ReactiveHandlebars">Reactive Handlebars</a>
-                    <br>
-                    Learned to use SSIS to create ETL tasks to transfer data via APIs using python/C# to our data warehouse.
-                </p>
-                `
-        },
-        {
-            id: 2,
-            title: "Learnings of my projects and flow - 10/8/2023",
-            body: `
-            <p>I've noticed that I take an interest in creating new things and showcasing them. 
-                Whether it be to my family or friends, clients, or just for myself. 
-                <br>
-                I enjoy creating new things and learning new things.
-                This may be due to my curiosity and desire to learn new things, or it may be due to my desire to create something that I can be proud of.
-                <br>
-                <br>
-                I can dig deep into the design aspect and the code, get into the flow of creating the application, whether it be a simple CRUD app such as an admin dashboard, or a complex app with
-                logic in the SQL back-end. I take pride in creating and applying all the knowledge I've obtained when learning and developing new projects. 
-                It lets me know of how far I've come and how much further I can go.
-                By having this constant drive of learning and doing, I really think the possibilities of being able to create well developed and interesting applications for me are endless.
-            </p>
-            `
-        },
-        {
-            id: 3,
-            title: "Artificial intellgence and large language models - 10/27/2023",
-            body: `
-            <p>I'm starting to gain an interest in AI and its use cases more and more each day as I learn more about it.
-                <br>
-                I've been learning about LLMs and it's use cases and how I can apply it to my projects.
-                <br>
-                One of the goals I have is to create agents that can help me or others with task automation. 
-                For example, having agents that can automate the process of creating a website, or creating analytic dashboards from data.
-                <br>
-                If this can be done, then it could bring value not just to me but to others as well.
-                <br>
-            </p>
-            `
+            })
+        }).then((res) => res.json()).then((data) => {
+            console.log(data);
+            setBlogs(data.data.blogs)
         }
-    ]);
-
-  
-    let myBlogs = [
-        {
-            title: "Blog 1 title",
-            description: "Blog 1 description"
-        },
-        {
-            title: "Blog 2 title",
-            description: "Blog 2 description"
-        }
-    ];
-
-    // let myBlogs = [];
-
-    // let g_myBlogs = Map();
-
-    // function getMyBlogs(callback) {
-    //     fetch("https://localhost:44352/api/Blogs/GetBlogs").then((response) => {
-    //         return response.json();
-    //     }).then((data) => {
-    //         callback(data);
-    //     }).catch((err) => {
-    //         console.log(err);
-    //     });
-    // }
-
-    // getMyBlogs((data) => {
-    //     console.log(data);
-    //     if(g_myBlogs.get("data")) {
-    //         console.log("data exists");
-    //     }
-    //     myBlogs = data;
-    // });
-
-    // let ret = "";
-    // ret += "<div>"
-
-    // myBlogs.forEach((b) => {
-    //     ret += `<div><h1>${b.title}</h1><p>${b.description}</p></div>`;
-    // });
-
-    // ret += "</div>"
-
-    // $("#blogs").html(ret);
+        ).catch((err) => {
+            console.log(err);
+        });
+    }, []);
 
     return(
         <div className="w-full mt-[75px]">
-            <h1 className="mb-5">Blog</h1>
-            <div className="flex flex-col gap-y-5">
+            <h1 className="mb-5 text-center">Blog</h1>
+            <div className="flex flex-col gap-y-5 mx-96">
                 {blogs.map((b) => {
                     return (
-                        <div className="flex flex-col gap-y-3 ml-3 p-3 border border-indigo-500 rounded-lg shadow-lg">
-                            <h2>{b.title}</h2>
-                            <div dangerouslySetInnerHTML={{ __html: b.body}}></div>
+                        <div key={b.slugId} className="flex flex-col gap-y-3 ml-3 p-3 border border-indigo-500 rounded-lg shadow-lg">
+                            <img src={b?.image?.url} className="w-[30rem] h-[30rem] mx-auto"></img>
+                            <div>
+                                <h2>{b.title}</h2>
+                                <div dangerouslySetInnerHTML={{ __html: b.content}}></div>
+                            </div>
                         </div>
                     )
                 })}
