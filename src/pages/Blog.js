@@ -42,11 +42,11 @@ export default function Blog() {
     return(
         <div className="w-full mt-[75px]">
             <h1 className="mb-5 text-center">Blog</h1>
-            <div className="flex flex-col gap-y-5 mx-96">
+            <div className="flex flex-col gap-y-5">
                 {blogs.map((b) => {
                     return (
                         <div key={b.slugId} className="flex flex-col gap-y-3 ml-3 p-3 border border-indigo-500 rounded-lg shadow-lg">
-                            <img src={b?.image?.url} className="w-[30rem] h-[30rem] mx-auto"></img>
+                            <img src={b?.image?.url} className="w-[30rem] h-[30rem]"></img>
                             <div>
                                 <h2>{b.title}</h2>
                                 <div dangerouslySetInnerHTML={{ __html: b.content}}></div>
