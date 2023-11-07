@@ -5,8 +5,8 @@ export default function Sun() {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      sunRef.current.style.left = `${e.pageX - 50}px`;
-      sunRef.current.style.top = `${e.pageY - 50}px`;
+      sunRef.current.style.left = `${e.pageX - 25}px`;
+      sunRef.current.style.top = `${e.pageY - 25}px`;
     };
     document.addEventListener('mousemove', handleMouseMove);
     return () => {

@@ -12,9 +12,9 @@ export default function BlogsHome({blogs}) {
     return (
         <div className="flex flex-col">
             <h1 className="mt-5">Blogs</h1>
-            <div className="flex mt-5 flex-wrap">
+            <div className="mt-5 grid grid-cols-3 gap-5">
                 {blogs.map((b) => (
-                    <BlogCard key={b.slugId} title={b.title} image={b?.image?.url} />
+                    <BlogCard key={b?.slugId} title={b?.title} image={b?.image?.url} slugId={b?.slugId} />
                 ))}
             </div>
             <div className="mt-5">

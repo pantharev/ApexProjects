@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Blogs from "../components/Blogs";
+import { useParams } from "react-router-dom";
 
 export default function Blog() {
+    const { slugId } = useParams();
 
     const URL = 'https://api-us-east-1-shared-usea1-02.hygraph.com/v2/cln7uwkh5fb4301t797ym0ysd/master'
 
@@ -17,7 +19,7 @@ export default function Blog() {
             body: JSON.stringify({
                 query: `
                     query Blogs {
-                        blogs {
+                        blogs(where: {slugId: "${slugId}"}) {
                             id
                             slugId
                             title
@@ -41,15 +43,16 @@ export default function Blog() {
 
     return(
         <div className="w-full mt-[75px]">
-            <h1 className="mb-5 text-center">Blog</h1>
             <div className="flex flex-col gap-y-5">
                 {blogs.map((b) => {
                     return (
-                        <div key={b.slugId} className="flex flex-col gap-y-3 ml-3 p-3 border border-indigo-500 rounded-lg shadow-lg">
-                            <img src={b?.image?.url} className="w-[30rem] h-[30rem]"></img>
-                            <div>
-                                <h2>{b.title}</h2>
-                                <div dangerouslySetInnerHTML={{ __html: b.content}}></div>
+                        <div className="mx-auto">
+                            <div key={b.slugId} className="flex flex-col gap-y-3 ml-3 p-3 lg:w-[800px] w-96">
+                                <h1 className="mb-5 text-center" dangerouslySetInnerHTML={{__html: b?.title.split("-").join("<br>")}}></h1>
+                                <img src={b?.image?.url} className="w-[30rem] h-[30rem] mx-auto"></img>
+                                <div className="mx-auto">
+                                    <div dangerouslySetInnerHTML={{ __html: b.content}}></div>
+                                </div>
                             </div>
                         </div>
                     )

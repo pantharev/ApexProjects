@@ -12,6 +12,7 @@ import styled, { ThemeProvider } from "styled-components";
 import CubeAnimation from './components/CubeAnimation';
 import Blog from './pages/Blog';
 import Sun from './components/Sun';
+import Blogs from './components/Blogs';
 
 
 const lightTheme = {
@@ -49,14 +50,15 @@ function App() {
       <AppWrapper>
         <Sun />
       <Header toggleTheme={toggleTheme} theme={theme} />
-      <Layout className={`flex justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blogs" element={<Blog />} />
-          </Routes>
-      </Layout>
+        <Layout className={`flex justify-center ${theme === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/blogs/:slugId" element={<Blog />} />
+            </Routes>
+        </Layout>
       </AppWrapper>
     </ThemeProvider>
   );

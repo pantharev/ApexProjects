@@ -19,15 +19,13 @@ export default function Home() {
             body: JSON.stringify({
                 query: `
                     query Blogs {
-                        blogs {
+                        blogs(orderBy: publishedAt_DESC, first: 3) {
                             id
                             slugId
                             title
                             image {
-                                id
                                 url
                             }
-                            content
                         }
                     }
                 `
