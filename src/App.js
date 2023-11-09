@@ -14,7 +14,6 @@ import Blog from './pages/Blog';
 import Sun from './components/Sun';
 import Blogs from './components/Blogs';
 
-
 const lightTheme = {
   background: "#f5f5f5",
   text: "#333",
