@@ -12,7 +12,7 @@ export default function BlogsHome({blogs}) {
     return (
         <div className="flex flex-col">
             <h1 className="mt-5">Blogs</h1>
-            <div className="mt-5 grid grid-cols-3 gap-5">
+            <div className="mt-5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {blogs.map((b) => (
                     <BlogCard key={b?.slugId} title={b?.title} image={b?.image?.url} slugId={b?.slugId} />
                 ))}
