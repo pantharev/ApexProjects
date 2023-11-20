@@ -57,7 +57,7 @@ export default function Home() {
                 </p>
                 <p>
                 <br></br>
-                I am currently working on more side projects to extend my knowledge in React, NextJs, TailwindCSS, among other technologies such as OpenAI library, Prisma, Stripe, etc. More to come soon!
+                I am currently working on more side projects/courses to extend my knowledge in React, NextJS 14, TailwindCSS, among other technologies such as OpenAI library, Prisma, Stripe, etc. More to come soon!
                 </p>
             </div>
             <div>

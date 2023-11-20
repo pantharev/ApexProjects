@@ -39,4 +39,8 @@
 [] - 
 
 [w] - fix background to be 100% full height for every page. home, about, projects, blogs
+
+[x] - fixed grid issues with blog cards not being mobile friendly - cousin rec
+
+[w] - fix mobile issues with other pages, about, projects, blogs.
     
