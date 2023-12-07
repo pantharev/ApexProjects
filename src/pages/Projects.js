@@ -47,6 +47,51 @@ export default function Projects() {
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                    ACME Dashboard (NextJS14 Tutorial)
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://nextjs-dashboard-acme-seven.vercel.app/dashboard/">https://nextjs-dashboard-acme-seven.vercel.app/dashboard</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        Dashboard application that allows users to view and track invoices and revenue. Also allows users to create, update, delete invoices and customers. Made with NextJS14, TailwindCSS, NextAuth, Postgres. 
+                        <br></br>
+                        <br></br>
+                        The main purpose of the application was to learn how to use NextJS14, a full stack web framework for building React based applications, by following the tutorial.
+                        The tutorial can be found: <a href="https://nextjs.org/learn">https://nextjs.org/learn</a>
+                        and is very well written and easy to follow.
+                        <br></br>
+                        Some of the things I learned from the tutorial include:
+                        using the App router to create pages and routes, handling form validations and errors, mutating data using server actions, authentication and authorization, and more.
+                        <br></br>
+                        <br></br>
+                        <Carousel showArrows={true} className="w-full">
+                            <div>
+                                <img src="./img/Login.JPG" alt="Login" />
+                                <p className="legend">Login</p>
+                            </div>
+                            <div>
+                                <img src="./img/ACME_Dashboard.JPG" alt="Dashboard Home" />
+                                <p className="legend">Dashboard Home</p>
+                            </div>
+                            <div>
+                                <img src="./img/Invoices_Table.JPG" alt="Invoices" />
+                                <p className="legend">Invoices</p>
+                            </div>
+                            <div>
+                                <img src="./img/Create_Invoice.JPG" alt="Create Invoice" />
+                                <p className="legend">Create Invoice</p>
+                            </div>
+                            <div>
+                                <img src="./img/Customers_Table.JPG" alt="Customers" />
+                                <p className="legend">Customers</p>
+                            </div>
+                            <div>
+                                <img src="./img/Create_Customer.JPG" alt="Create Customer" />
+                                <p className="legend">Create Customer</p>
+                            </div>
+                        </Carousel> 
+                    </div> 
+                </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
                     Apex Commerce
                     <div className="flex flex-col gap-y-3">
                         <a href="https://apex-commerce.vercel.app/">https://apex-commerce.vercel.app/</a>
