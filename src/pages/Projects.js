@@ -42,11 +42,11 @@ export default function Projects() {
             
             <div className="flex gap-x-2">
                 <h2>Public projects</h2>
-                <button className="bg-indigo-500 rounded-lg p-1 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={handleExpandToggle}>{expandedText}</button>
+                <button className="bg-indigo-500 rounded-lg p-1" onClick={handleExpandToggle}>{expandedText}</button>
                 {/* <button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-300 focus:ring-2 ring-indigo-800" onClick={() => setExpanded(false)}>Collapse All</button> */}
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     ACME Dashboard (NextJS14 Tutorial)
                     <div className="flex flex-col gap-y-3">
                         <a href="https://nextjs-dashboard-acme-seven.vercel.app/dashboard/">https://nextjs-dashboard-acme-seven.vercel.app/dashboard</a>
@@ -91,7 +91,7 @@ export default function Projects() {
                         </Carousel> 
                     </div> 
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     Apex Commerce
                     <div className="flex flex-col gap-y-3">
                         <a href="https://apex-commerce.vercel.app/">https://apex-commerce.vercel.app/</a>
@@ -100,7 +100,7 @@ export default function Projects() {
                         E-Commerce application with shopping cart functionality made with React
                     </div>
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     SurveySpeak (& design). 
                     <div className="flex flex-col gap-y-3">
                         <a href="https://brainspeak.onrender.com/">https://brainspeak.onrender.com/</a>
@@ -114,7 +114,7 @@ export default function Projects() {
                     </div>
                     {/* TODO: Carousel of images */}
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     LMS FIU.
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/lms-fiu-fb-client">https://github.com/pantharev/lms-fiu-fb-client</a>
@@ -127,7 +127,7 @@ export default function Projects() {
                         Used the MEAN full-stack (MySql, Express, Angular, NodeJS).
                     </div>
                 </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     Reactive Handlebars
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/ReactiveHandlebars">Reactive Handlebars github repository</a>
@@ -143,10 +143,10 @@ export default function Projects() {
 
             <div className="flex gap-x-2 mt-5 mb-2">
                 <h2>Private projects</h2>
-                <button className="bg-indigo-600 rounded-lg p-1 hover:bg-indigo-400 focus:ring-2 ring-indigo-800" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
+                <button className="bg-indigo-600 rounded-lg p-1" onClick={handlePrivateExpandToggle}>{privateExpandedText}</button>
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     Parking System
                     <div className={`expanding-container ${privateExpanded ? 'expanding-content' : 'collapsed-content'}`}>
                         <div>
@@ -173,6 +173,22 @@ export default function Projects() {
                             </div>
                         </Carousel>                        
                     </div>
+                </li>
+            </ul>
+
+            <div className="flex gap-x-2 mt-5 mb-2">
+                <h2>Pending projects</h2>
+            </div>
+            <ul className="mt-3 flex flex-col gap-y-3 list-disc">
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    Apex Commerce v2
+                        <div>
+                            An e-commerce application with functionality such as product search, shopping cart, and checkout. Will also contain reviews, ratings, and a user profile page. And will allow the user to connect to a payment provider such as paypal or stripe or shopify.
+                            May be extended to allow users to create their own stores and sell their own products.
+                            <br></br>
+                            To be made with React, NextJS, NextAuth, TailwindCSS, and SupaBase.
+                            Expected to have a working, first-draft prototype by 2/1/2024.
+                        </div>                      
                 </li>
             </ul>
 
