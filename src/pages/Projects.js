@@ -186,7 +186,7 @@ export default function Projects() {
                             An e-commerce application with functionality such as product search, shopping cart, and checkout. Will also contain reviews, ratings, and a user profile page. And will allow the user to connect to a payment provider such as paypal or stripe or shopify.
                             May be extended to allow users to create their own stores and sell their own products.
                             <br></br>
-                            To be made with React, NextJS, NextAuth, TailwindCSS, and SupaBase.
+                            To be made with React, NextJS, NextAuth, TailwindCSS, and Prisma + Neon Database for storage.
                             Expected to have a working, first-draft prototype by 2/1/2024.
                         </div>                      
                 </li>
