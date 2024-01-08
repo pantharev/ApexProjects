@@ -101,6 +101,17 @@ export default function Projects() {
                     </div>
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    NextAuthTemplate (wip)
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://nextauthprisma-git-auth-pantharev.vercel.app/">https://nextauthprisma-git-auth-pantharev.vercel.app/</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        Goal is to have a re-usable NextJS14 template with NextAuth and Prisma for future projects.
+                        <br></br>
+                        Currently have a working prototype with NextAuth and Prisma, but need to add more features and functionality.
+                    </div>
+                </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     SurveySpeak (& design). 
                     <div className="flex flex-col gap-y-3">
                         <a href="https://brainspeak.onrender.com/">https://brainspeak.onrender.com/</a>
