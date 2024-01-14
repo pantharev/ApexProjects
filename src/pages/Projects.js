@@ -101,14 +101,22 @@ export default function Projects() {
                     </div>
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
-                    NextAuthTemplate (wip)
+                    NextAuthTemplate
                     <div className="flex flex-col gap-y-3">
-                        <a href="https://nextauthprisma-git-auth-pantharev.vercel.app/">https://nextauthprisma-git-auth-pantharev.vercel.app/</a>
+                        <a href="https://nextauthprisma.vercel.app/">https://nextauthprisma.vercel.app/</a>
                     </div>
                     <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
-                        Goal is to have a re-usable NextJS14 template with NextAuth and Prisma for future projects.
+                        A reusable NextJS14 template with NextAuth and Prisma for future projects.
                         <br></br>
-                        Currently have a working prototype with NextAuth and Prisma, but need to add more features and functionality.
+                        It works by using NextAuth to handle authentication, and Prisma to handle the database.
+                        <br></br>
+                        The template has sign in and sign out functionality, and the following protected pages:
+                        <ul className="list-disc ml-5">
+                            <li>Protected Page (Profile page of the logged in user)</li>
+                            <li>Posts (With CRUD functionality for the logged in user)</li>
+                        </ul>
+                        <br></br>
+                        A user guide to use the template can be found here: <a href="https://github.com/pantharev/nextauthprisma">https://github.com/pantharev/nextauthprisma</a>
                     </div>
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
