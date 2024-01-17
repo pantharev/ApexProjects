@@ -101,11 +101,29 @@ export default function Projects() {
                     </div>
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    Apex Commerce 2 (work in progress as of 1/16/2024)
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://apex-commerce2.vercel.app/">https://apex-commerce2.vercel.app/</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        Last updated 1/16/2024.
+                        <br></br>
+                        <br></br>
+                        E-commerce application with authentication and a sample products page. 
+                        <br></br>
+                        Made with NextJS14, TailwindCSS, NextAuth, Prisma, and Neon Database.
+                        More functionality such as shopping cart, checkout, reviews, and payment provider integration such as Stripe will be added in the future.
+                    </div>
+                </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     NextAuthTemplate
                     <div className="flex flex-col gap-y-3">
                         <a href="https://nextauthprisma.vercel.app/">https://nextauthprisma.vercel.app/</a>
                     </div>
                     <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        Last updated 1/11/2024.
+                        <br></br>
+                        <br></br>
                         A reusable NextJS14 template with NextAuth and Prisma for future projects.
                         <br></br>
                         It works by using NextAuth to handle authentication, and Prisma to handle the database.
