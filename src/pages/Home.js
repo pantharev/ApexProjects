@@ -3,7 +3,6 @@ import BlogsHome from "../components/BlogsHome";
 import Blogs from "../components/Blogs";
 import Socials from "../components/Socials";
 import { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
 

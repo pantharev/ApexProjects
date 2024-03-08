@@ -115,6 +115,15 @@ export default function Projects() {
                         More functionality such as shopping cart, checkout, reviews, and payment provider integration such as Stripe will be added in the future.
                     </div>
                 </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2 hover:bg-gradient-to-r from-transparent from-30% via-cyan-300 via-50% to-purple-300 to-90%">
+                        Apex Movies (work in progress as of 3/7/2024) 
+                        <div className="flex flex-col gap-y-3">
+                            <a href="https://apex-movies.vercel.app/">https://apex-movies.vercel.app/</a>
+                        </div>
+                        <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                            Project to search for movies and view their details. Building with NextJS14 and using an api for the movie data.
+                        </div>
+                    </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     NextAuthTemplate
                     <div className="flex flex-col gap-y-3">
