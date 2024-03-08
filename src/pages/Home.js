@@ -1,7 +1,9 @@
 import Hero from "../components/Hero";
 import BlogsHome from "../components/BlogsHome";
 import Blogs from "../components/Blogs";
+import Socials from "../components/Socials";
 import { useState, useEffect } from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
 
@@ -59,6 +61,7 @@ export default function Home() {
                 <br></br>
                 I am currently working on more side projects/courses to extend my knowledge in React, <a href="https://www.nextjs.org/learn">NextJS 14</a>, TailwindCSS, among other technologies such as OpenAI library, Prisma, Stripe, etc. More to come soon!
                 </p>
+                <Socials />
             </div>
             <div>
                 <BlogsHome blogs={blogs} />
