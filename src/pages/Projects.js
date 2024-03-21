@@ -123,7 +123,29 @@ export default function Projects() {
                         <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
                             Project to search for movies and view their details. Building with NextJS14 and using an api for the movie data.
                         </div>
-                    </li>
+                </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    ApexTweets (work in progress as of 3/19/2024)
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://apextweets.vercel.app/">https://apextweets.vercel.app/</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        <br></br>
+                        A twitter-like social media made with NextJS14, TailwindCSS, NextAuth, Prisma, and Neon Database.
+                        <br></br>
+                        It works by using NextAuth to handle authentication, and Prisma to handle the database.
+                        <br></br>
+                        <br></br>
+                        The goal is to have a working twitter-like social media with functionality such as creating posts with images, following users, liking posts, and replying to posts.
+                        <br></br>
+                        Additionally, the user will have a profile page with their posts and followers.
+                        <br></br>
+                        With future plans to add a chat feature and notifications.
+                        <br></br>
+                        Along with daily/weekly auto-generated posts from AI bots.
+                        <br></br>
+                    </div>
+                </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     NextAuthTemplate
                     <div className="flex flex-col gap-y-3">
