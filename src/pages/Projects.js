@@ -183,6 +183,15 @@ export default function Projects() {
                     {/* TODO: Carousel of images */}
                 </li>
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    ApexWeather
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://apex-weather.vercel.app/">https://apex-weather.vercel.app/</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        Weather application that allows users to search for the weather in a city. Made with React and WeatherAPI.com via RapidApi.
+                    </div>
+                </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     LMS FIU.
                     <div className="flex flex-col gap-y-3">
                         <a href="https://github.com/pantharev/lms-fiu-fb-client">https://github.com/pantharev/lms-fiu-fb-client</a>
