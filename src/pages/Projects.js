@@ -214,6 +214,15 @@ export default function Projects() {
                         Influenced by frameworks such as Angular, React, and Vuejs.
                     </div>
                 </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    Apex AI Creations (work in progress as of 9/12/2024)
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://apex-ai-creations.vercel.app/">https://apex-ai-creations.vercel.app/</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        This was made using NextJs, TailwindCSS, and HyGraph. It is a web application that allows users to create and view user generated AI creations. Whether it be images, music, film, or videos.
+                    </div>
+                </li>
             </ul>
 
             {/* <hr className="border border-b-purple-300 my-5"></hr> */}
