@@ -47,6 +47,20 @@ export default function Projects() {
             </div>
             <ul className="mt-3 flex flex-col gap-y-3 list-disc">
                 <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
+                    Apex AI Creations (work in progress as of 9/12/2024)
+                    <div className="flex flex-col gap-y-3">
+                        <a href="https://apex-ai-creations.vercel.app/">https://apex-ai-creations.vercel.app/</a>
+                        <a href="https://ai-creations-central-client.fly.dev/">https://ai-creations-central-client.fly.dev/</a>
+                    </div>
+                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
+                        This was made using NextJs, TailwindCSS, and HyGraph. It is a web application that allows users to create and view user generated AI creations. Whether it be images, music, film, or videos. All within a featured page with likes/comments, and user profiles pages for each user.
+                        With the goal also being to allow users to sell their creations and have a marketplace for AI creations to buy and sell from each other.
+                        <br></br>
+                        <br></br>
+                        Note that there will be monitary gains for me from this project, but it is a project that I am passionate about and want to see it come to life.
+                    </div>
+                </li>
+                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
                     ACME Dashboard (NextJS14 Tutorial)
                     <div className="flex flex-col gap-y-3">
                         <a href="https://nextjs-dashboard-acme-seven.vercel.app/dashboard/">https://nextjs-dashboard-acme-seven.vercel.app/dashboard</a>
@@ -212,15 +226,6 @@ export default function Projects() {
                     <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
                         This was made with Handlebars and RXJS, to create reactive Handlebars components that refresh when the data changes.
                         Influenced by frameworks such as Angular, React, and Vuejs.
-                    </div>
-                </li>
-                <li className="ml-3 border border-indigo-500 rounded-lg shadow-lg p-2">
-                    Apex AI Creations (work in progress as of 9/12/2024)
-                    <div className="flex flex-col gap-y-3">
-                        <a href="https://apex-ai-creations.vercel.app/">https://apex-ai-creations.vercel.app/</a>
-                    </div>
-                    <div className={`expanding-container ${expanded ? 'expanding-content' : 'collapsed-content'}`}>
-                        This was made using NextJs, TailwindCSS, and HyGraph. It is a web application that allows users to create and view user generated AI creations. Whether it be images, music, film, or videos.
                     </div>
                 </li>
             </ul>
